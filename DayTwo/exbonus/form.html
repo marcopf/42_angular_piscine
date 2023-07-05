@@ -21,7 +21,7 @@
             <input type="text" class="inp" id="surname">
         </div>
     </div>
-        <div class="input_line">
+        <div class="input_line zip_container">
             <label for="ZIP Code" id="zip_lab">ZIP Code: </label>
             <input type="text" id="zip">
         </div>
@@ -48,7 +48,10 @@
                 </div>
             </div>
         </div>
-        <button>Submit!</button>
+        <div class="buttons">
+            <input type="submit" name="action" value="Submit!" />
+            <input type="reset" name="action" value="Reset" onclick="reload()" />
+        </div>
     </form>
     <script src="check.js"></script>
 </body>

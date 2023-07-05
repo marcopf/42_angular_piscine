@@ -18,20 +18,29 @@ function check_zip(name) {
 
 window.addEventListener("keyup", event => {
     let name = document.getElementById("name").value;
-    if (!check_name(name)) {
+    if (!check_name(name) || name.length > 50) {
+        if (name.length > 50)
+            alert("name must be under 50 character");
+        else
+            alert("number not allowed");
         document.getElementById("name").value = "";
-        alert("number not allowed");
     }
     let surname = document.getElementById("surname").value;
-    if (!check_name(surname)) {
+    if (!check_name(surname) || surname.length > 50) {
+        if (surname.length > 50)
+            alert("surname must be under 50 character");
+        else
+            alert("number not allowed");
         document.getElementById("surname").value = "";
-        alert("number not allowed");
     }
     let zip = document.getElementById("zip").value;
     if ((zip.length != 5 && zip.length != 0) || !check_zip(zip))
         document.getElementById("zip_lab").innerHTML = "supposed to be 5 digit long";
     else
         document.getElementById("zip_lab").innerHTML = "ZIP Code: ";
+    let job = document.querySelector("#job").value;
+    if (job.length > 80)
+        alert("job description must bel less than 80 character");
 });
 
 let form = document.querySelector("#form_id").addEventListener("submit", event => {
@@ -52,3 +61,8 @@ let form = document.querySelector("#form_id").addEventListener("submit", event =
             alert("fill job description area pls");
     }
 })
+
+function reload()
+{
+    location.reload();
+}
