@@ -1,0 +1,88 @@
+body {
+    background-image: url("http://m.gettywallpapers.com/wp-content/uploads/2021/07/Landscape-Wallpaper-4k.jpg");
+    font-family: Arial, Helvetica, sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.myForm {
+    border-radius: 10px;
+    background-color: white;
+    padding: 20px;
+    width: auto;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.myForm h1{
+    width: 100%;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.input_line {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+.gender {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+#job_id{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+#name_sect{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#special
+{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+button
+{
+    width: 50%;
+    color: antiquewhite;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+button:hover{
+    scale: 1.1;
+    background-color: antiquewhite;
+    color: black;
+    transition: 0.3s;
+}
+
+.inp{
+    width: 80%;
+}

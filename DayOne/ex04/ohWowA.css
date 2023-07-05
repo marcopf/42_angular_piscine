@@ -1,0 +1,69 @@
+body {
+    min-height: 100%;
+}
+
+html {
+    height: 100%;
+}
+
+.text {
+    height: 30vh;
+    background-color: blanchedalmond;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.img1 h1 {
+    color: crimson;
+}
+
+.img2 h1 {
+    color: palegreen;
+}
+
+.img3 h1 {
+    color: powderblue;
+}
+
+.img1 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.9;
+    background-image: url('	https://images4.alphacoders.com/131/1316385.jpeg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.img2 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.9;
+    background-image: url('https://images.pexels.com/photos/2387418/pexels-photo-2387418.jpeg?cs=srgb&dl=pexels-ezra-comeau-2387418.jpg&fm=jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.img3 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.9;
+    background-image: url('https://images.hdqwalls.com/download/windows-10-landscape-3840x2160.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

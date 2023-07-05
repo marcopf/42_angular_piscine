@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="#" class="myForm" id="form_id">
+        <h1>Best Form Ever</h1>
+        <div id="name_sect">
+        <div class="input_line">
+            <label for="name" id="name_lab">Name: </label>
+            <input type="text" class="inp" id="name">
+        </div>
+        <div class="input_line">
+            <label for="surname" id="surname_lab">Surname: </label>
+            <input type="text" class="inp" id="surname">
+        </div>
+    </div>
+        <div class="input_line">
+            <label for="ZIP Code" id="zip_lab">ZIP Code: </label>
+            <input type="text" id="zip">
+        </div>
+        <div id="job_id">
+        <div class="gender">
+            <div class="gen"><label for="gen">male</label> <input name="genderV" type="radio" id="male"></div>
+            <div class="gen"><label for="gen">female</label><input name="genderV" type="radio" id="female"></div>
+        </div>
+        <div id="special">
+            <label for="university">university: </label>
+            <select name="university" id="university">
+                <option value="University">University</option>
+                <option value="Sapienza">Sapienza</option>
+                <option value="Tor Vergata">Tor Vergata</option>
+                <option value="Roma 3">Roma 3</option>
+		    </select>
+        </div>
+    </div>
+        <div id="job_id">
+            <div class="work input_line"><label for="work">worker student?</label><input type="checkbox" id="checkbox_id"></div>
+                <div class="input_line">
+                <label for="job">job description: </label>
+                <input type="text" id="job">
+                </div>
+            </div>
+        </div>
+        <button>Submit!</button>
+    </form>
+    <script src="check.js"></script>
+</body>
+
+</html>

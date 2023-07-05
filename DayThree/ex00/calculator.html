@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="calculator.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<div class="calc_body">
+		<h1>Calculator</h1>
+		<div class="op_input">
+			<input type="text" class="left">
+			<select name="operator" id="op">
+				<option value="+">+</option>
+				<option value="*">*</option>
+				<option value="/">/</option>
+				<option value="-">-</option>
+			</select>
+			<input type="text" class="right">
+		</div>
+		<div class="button">
+			<button onclick="doop()">Calculate me baby!</button>
+		</div>
+		<div class="result_area">
+			<h3>Result: </h3>
+			<h3 class="result"></h3>
+		</div>
+	</div>
+	<iframe id="video">
+	</iframe>
+	
+	<script src="calculator.js"></script>
+</body>
+</html>
