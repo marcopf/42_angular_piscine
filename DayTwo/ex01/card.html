@@ -17,7 +17,7 @@
             </div>
         </tr>
         <tr>
-            <h1 class="name">Elon Musk</h1></tr>
+            <h1 id="name">Elon Musk</h1></tr>
             <tr>
             <h2>rich & funny guy</h2></tr>
             <tr>
@@ -25,14 +25,18 @@
             <tr>
             <div class="buttons">
                 <a href="https://pointerpointer.com/">Contact</a>
-                <button onclick="reveal()">Reveal</button>
+                <button onclick="reveal()">Reveal name</button>
+                <button onclick="reveal_image()">Reveal image</button>
             </div></tr>
         </table>
     </div>
     <script>
         function reveal() {
-            document.getElementById("photo").src = "https://i.ytimg.com/vi/zpWYQ1YtgnI/maxresdefault.jpg";
             document.getElementById("name").innerHTML = "Sherek";
+        }
+        function reveal_image()
+        {
+            document.getElementById("photo").src = "https://i.ytimg.com/vi/zpWYQ1YtgnI/maxresdefault.jpg";
         }
     </script>
 </body>

@@ -6,20 +6,21 @@ body
 
 .card_container
 {
-	width: 100%;
-	display: grid;
-	grid-template-columns: 24% 24% 24% 24%;
-	gap: 1%;
+	width: 100vw;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .card_body
 {
+	width: 22%;
 	overflow: hidden;
 	display: flex;
 	background-color: white;
 	flex-direction: column;
 	align-items: center;
 	border-radius: 10px;
+	margin: 1%;
 	box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
@@ -29,12 +30,14 @@ body
 	justify-content: center;
 	width: 93%;
 	margin: 10px;
+	padding: 10px;
 	border-radius: 10px;
 }
 
 .image
 {
 	width: 90%;
+	height: 40%;
 	border-radius: 15px;
 	overflow: hidden;
 }
@@ -42,4 +45,6 @@ body
 .card_body img
 {
 	width: 100%;
+	height: 100%;
+	object-fit: contain;
 }
