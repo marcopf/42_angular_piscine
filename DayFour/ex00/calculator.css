@@ -1,0 +1,66 @@
+html
+{
+	height: 100vh;
+}
+
+h1
+{
+	padding: 0;
+	margin: 0;
+}
+
+body
+{
+	min-height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.calc_body
+{
+	border-radius: 4px;
+	padding: 20px;
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.op_input
+{
+	margin-top: 10px;
+}
+
+button
+{
+    width: 100%;
+    color: antiquewhite;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 3px;
+    transition: 0.3s;
+	margin-top: 10px;
+}
+
+button:hover{
+    scale: 1.03;
+    background-color: antiquewhite;
+    color: black;
+    transition: 0.3s;
+}
+
+.result_area
+{
+	display: flex;
+	align-items: center;
+}
+
+#video
+{
+	width: 100%;
+	height: 100%;
+	visibility:hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+}

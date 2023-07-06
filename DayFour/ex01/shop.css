@@ -1,0 +1,124 @@
+body
+{
+	background: url("https://i.pinimg.com/originals/c4/13/59/c413599bc57f7596d75bea1775b14169.jpg");
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: antiquewhite;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.card_container
+{
+	width: 100vw;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.container_card
+{
+	justify-content: center;
+}
+
+.container_list
+{
+	flex-direction: column;
+	align-items: center;
+}
+
+.card_body
+{
+	overflow: hidden;
+	display: flex;
+	background-color: white;
+	align-items: center;
+	border-radius: 10px;
+	margin: 1%;
+	box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px 0px, rgba(0, 0, 0, 0.09) 0px 4px 2px 0px, rgba(0, 0, 0, 0.09) 0px 8px 4px 0px, rgba(0, 0, 0, 0.09) 0px 16px 8px 0px, rgba(0, 0, 0, 0.09) 0px 32px 16px 0px;
+}
+
+.card
+{
+	width: 30%;
+	flex-direction: column;
+}
+
+.card .id_prod
+{
+	position: absolute;
+	z-index: -20;
+}
+
+.list
+{
+	width: 95%;
+	height: 30vh;
+	flex-direction: row;
+}
+
+.list div
+{
+	height: 70%;
+}
+
+.card_body div{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 90%;
+	border-radius: 10px;
+}
+.list .id_prod
+{
+	width: 30%;
+}
+
+.list .image
+{
+	margin-top: 0 !important;
+}
+
+.list h2{
+	padding: 20px;
+}
+
+.image
+{
+	width: 80% !important;
+	margin-top: 20px;
+	height: 30vh;
+	border-radius: 15px;
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px 0px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px 0px inset;
+
+	overflow: hidden;
+}
+
+.card_body img
+{
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.switcher
+{
+	position: sticky;
+	top: 93vh;
+	left: 85vw;
+	width: 15vw;
+	height: 5vh;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: chocolate;
+	transition: 0.3s;
+}
+
+.switcher:hover
+{
+	scale: 1.05;
+	background-color: burlywood;
+	transition: 0.3s;
+}
