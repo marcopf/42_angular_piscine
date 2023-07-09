@@ -24,7 +24,21 @@ function add_item():void
   }
 }
 
-let data1 = [{
+interface validate
+{
+  id: number;
+	title: string;
+	price: number;
+	description: string;
+	image: string;
+	category: string;
+  rating: any
+
+}
+
+interface validates extends Array<validate>{}
+
+let data1 : validates = [{
   "id": 1,
   "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
   "price": 109.95,
