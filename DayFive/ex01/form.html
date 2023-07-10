@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="form.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>my amazing form</title>
+</head>
+<body>
+	<form action="#" id="myform"">
+		<div class="title">
+			<h1>My Amazing Form</h1>
+			<button type="submit" id="submit_button">Submit</button>
+		</div>
+		<div class="string_input form_div">
+			<div class="validator">
+				<label for="string">String (letter, lenght, empty)</label>
+				<div>
+					<input type="text" id="string">
+					<div class="string_button button" onclick="letter_check()">Validate</div>
+				</div>
+			</div>
+			<div class="string_msg">
+				<div class="lenght_check">
+					<p>lenght:</p>
+					<p class="lenght">0</p>
+				</div>
+				<div class="is_blank">
+					<p>blank check:</p>
+					<span class="is_blank_ok">✅</span>
+				</div>
+				<div class="contain_number">
+					<p>letter check:</p>
+					<span class="is_ok">✅</span>
+				</div>
+			</div>
+		</div>
+		<div class="number form_div">
+			<div class="validator">
+				<label for="number">All Number</label>
+				<div>
+					<input type="text" id="number">
+					<div class="number_button button" onclick="number_check()">Validate</div>
+				</div>
+			</div>
+			<div class="number_msg">
+				<p>Number check:</p>
+				<span class="number_icon">✅</span>
+			</div>
+		</div>
+		<div class="floating form_div">
+			<div class="validator">
+				<label for="floating">Floating</label>
+				<div>
+					<input type="text" name="" id="floating">
+					<div class="float_button button" onclick="float_check()">Validate</div>
+				</div>
+			</div>
+			<div class="float_msg">
+				<p>is floating:</p>
+				<span class="floating_icon">✅</span>
+			</div>
+		</div>
+		<div class="letter_number form_div">
+			<div class="validator">
+				<label for="letter_number">Letter and Number</label>
+				<div>
+					<input type="letter_number" id="letter_number">
+					<div class="letter_number_button button" onclick="ln()">Validate</div>
+				</div>
+			</div>
+			<div class="ln_msg">
+				<p>Lett. and Num.:</p>
+				<span class="ln_icon">✅</span>
+			</div>
+		</div>
+		<div class="email form_div">
+			<div class="validator">
+				<label for="email">Email</label>
+				<div>
+					<input type="text" id="email">
+					<div class="email_button button" onclick="email_check()">Validate</div>
+				</div>
+			</div>
+			<div class="email_msg">
+				<p>Email Check:</p>
+				<span class="email_icon">✅</span>
+			</div>
+		</div>
+		<div class="email form_div">
+			<div class="validator">
+				<label for="date">Date</label>
+				<div>
+					<input type="text" id="date">
+					<div class="date_button button" onclick="date_check()">Validate</div>
+				</div>
+			</div>
+			<div class="date_msg">
+				<p>Date Check:</p>
+				<span class="date_icon">✅</span>
+			</div>
+		</div>
+		<div class="phone form_div">
+			<div class="validator">
+				<label for="phone">Phone Number</label>
+				<div>
+					<input type="text" id="phone">
+					<div class="phone_button button" onclick="phone_check()">Validate</div>
+				</div>
+			</div>
+			<div class="phone_msg">
+				<p>phone check:</p>
+				<span class="phone_icon">✅</span>
+			</div>
+		</div>
+		<div class="password form_div">
+			<div class="validator">
+				<label for="password">Password</label>
+				<div>
+					<input type="password" id="password">
+					<div class="password_button button" onclick="password_check()">Validate</div>
+				</div>
+			</div>
+			<div class="password_msg">
+				<p>password check:</p>
+				<span class="password_icon">✅</span>
+			</div>
+		</div>
+		<div class="ip form_div">
+			<div class="validator">
+				<label for="ip">Ip address</label>
+				<div>
+					<input type="text" id="ip">
+					<div class="ip_button button" onclick="ip_check()">Validate</div>
+				</div>
+			</div>
+			<div class="ip_msg">
+				<p>ip check:</p>
+				<span class="ip_icon">✅</span>
+			</div>
+		</div>
+	</form>
+	<script src="form.js"></script>
+</body>
+</html>

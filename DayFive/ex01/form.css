@@ -1,0 +1,106 @@
+html
+{
+	height: 100vh;
+}
+
+body
+{
+	font-family: Arial, Helvetica, sans-serif;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-image: url("https://images.unsplash.com/photo-1432847712612-926caafaa802?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D&w=1000&q=80");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#myform
+{
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: white;
+	border-radius: 10px;
+	padding: 20px;
+}
+
+#myform div
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.form_div
+{
+	width: 90%;
+	border: 1px solid lightgray;
+	margin: 5px;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+
+
+button, .button
+{
+	margin-left: 10px;
+	margin-right: 10px;
+	background-color: black;
+	border-radius: 5px;
+	border: 1px solid black;
+	color: white;
+	transition: 0.3s;
+}
+
+.button
+{
+	
+}
+
+.button:hover
+{
+	scale: 1.03;
+	background-color: beige;
+	color: black;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+button:hover
+{
+	scale: 1.03;
+	background-color: beige;
+	color: black;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.validator
+{
+	width: 80% !important;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.string_msg
+{
+	display: flex;
+	flex-direction: column;
+}
+
+p
+{
+	padding: 0;
+	margin: 0;
+}
+
+.title
+{
+	width: 90%;
+	display: flex;
+	justify-content: space-between;
+}
