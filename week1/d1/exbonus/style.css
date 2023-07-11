@@ -1,0 +1,126 @@
+body {
+    background-image: url("https://static.vecteezy.com/system/resources/previews/021/072/223/original/anime-sky-cloud-in-blue-heaven-in-sunny-summer-day-cloudy-beautiful-nature-morning-scene-with-falling-star-wallpaper-background-vector.jpg");
+    font-family: Arial, Helvetica, sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.myForm {
+    color: rgb(96, 176, 250);;
+    border-radius: 10px;
+    background-color: white;
+    padding: 20px;
+    width: auto;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    transition: 0.4s;
+}
+
+.myForm:hover
+{
+    scale: 1.07;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transition: 0.4s;
+}
+    
+
+.myForm h1{
+    width: 100%;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.input_line {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+.gender {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+#job_id{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+#name_sect{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#special
+{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+.buttons input
+{
+    width: 50%;
+    color: blue;
+    background-color: rgb(96, 176, 250);
+    border: 1px solid blanchedalmond;
+    border-radius: 3px;
+    transition: 0.3s;
+    margin: 5px;
+    transition: 0.3s;
+}
+
+.buttons input:hover{
+    scale: 1.05;
+    transition: 0.3s;
+    background-color: antiquewhite;
+}
+
+button:hover{
+    scale: 1.1;
+    background-color: antiquewhite;
+    color: black;
+    transition: 0.3s;
+}
+
+.inp{
+    width: 80%;
+}
+
+.buttons
+{
+    display: flex;
+    width: 100%;
+}
+
+#zip
+{
+    width: 90% !important;
+}
+
+#university
+{
+    width: 85% !important;
+}
+
+#job
+{
+    width: 80% !important;
+}
