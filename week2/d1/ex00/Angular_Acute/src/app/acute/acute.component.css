@@ -1,0 +1,25 @@
+.acute_angle
+{
+	font-family: Arial, Helvetica, sans-serif;
+	background-color:#fb8500;
+	color: #8ecae6;
+	width: 40vw;
+	height: 20vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 5px;
+	transition: 1s;
+}
+
+.acute_angle:hover
+{
+	transform: rotate(220deg);
+	transition: 1s;
+}
+
+.block:hover .down
+{
+	transform: translateY(100px);
+	transition: 1s;
+}
