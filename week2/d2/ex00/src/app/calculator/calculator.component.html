@@ -1,0 +1,17 @@
+<div class="container">
+	<h1>Calculator</h1>
+	<div class="inputs_div">
+		<input (keyup)="left($event)" type="text" id="left">
+		<select (change)="op($event)" name="operator" id="operator">
+			<option value="+">+</option>
+			<option value="-">-</option>
+			<option value="/">/</option>
+			<option value="*">*</option>
+		</select>
+		<input (keyup)="right($event)" type="text" id="right">
+	</div>
+	<button (click)="doop()">calculate me baby!</button>
+	<div class="result">
+		<h1>Result</h1><h2>{{calc.result}}</h2>
+	</div>
+</div>

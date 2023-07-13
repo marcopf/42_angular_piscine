@@ -1,0 +1,41 @@
+.container
+{
+	background-color: antiquewhite;
+	border-radius: 10px;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+input, button
+{
+	margin: 10px;
+}
+
+button
+{
+    width: 95%;
+    color: antiquewhite;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 3px;
+    transition: 0.3s;
+	margin-top: 10px;
+}
+
+button:hover{
+    scale: 1.03;
+    background-color: antiquewhite;
+    color: black;
+    transition: 0.3s;
+}
+
+.result
+{
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+	align-items: center;
+}
