@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-card',
@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./card.component.css']
 })
 export class CardComponent {
+  @Input() childView:any;
   data = [{
     "id": 1,
     "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
@@ -227,22 +228,4 @@ export class CardComponent {
       "count": 145
     }
   }]
-  view={
-    type:"card",
-    container:"container_card"
-  };
-  listIt()
-  {
-    console.log(this.view.type)
-    if (this.view.type == "card")
-    {
-      this.view.container = "container_list"
-      this.view.type = "list";
-    }
-    else
-    {
-      this.view.container = "container_card"
-      this.view.type = "card";
-    }
-  }
 }
