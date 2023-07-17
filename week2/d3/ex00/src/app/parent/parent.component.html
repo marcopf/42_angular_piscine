@@ -1,0 +1,3 @@
+<app-nav (hide)="handleHide()" (change)="changeView()"></app-nav>
+<app-card *ngIf="val" [view_state]="view"></app-card>
+<app-table *ngIf="!val"></app-table>

@@ -1,0 +1,9 @@
+<form action="#">
+	<h1>Create Card</h1>
+	<input type="text" placeholder="Name" name="name" [(ngModel)]="form.title">
+	<input type="text" placeholder="Image" name="img" [(ngModel)]="form.image">
+	<input type="text" placeholder="Price" name="price" [(ngModel)]="form.price">
+	<input type="text" placeholder="Description" name="description" [(ngModel)]="form.description">
+	<input type="text" placeholder="Category" name="category" [(ngModel)]="form.category">
+	<button (click)="submitFunc($event)">Create Card</button>
+</form>

@@ -1,0 +1,11 @@
+<div class="card_container {{view_state.container}}">
+	<div *ngFor="let item of val" class="card_body {{view_state.type}}">
+		<h3>{{item.title}}</h3>
+		<div class="img_cont"><img src="{{item.image}}" alt=""></div>
+		<p>{{item.description}}</p>
+		<h4>{{item.category}}</h4>
+		<h5>{{item.price}}$</h5>
+		<h3>id:{{item.id}}</h3>
+	</div>
+</div>
+	

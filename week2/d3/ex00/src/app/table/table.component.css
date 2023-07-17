@@ -1,0 +1,39 @@
+table
+{
+	width: 100vw;
+}
+
+tr
+{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	color: white;
+}
+
+.title
+{
+	justify-self: start !important;
+	width: 65vw;
+}
+
+td
+{
+	width: 5vw;
+}
+
+.even
+{
+	background-color: darkgray;
+}
+
+.odd
+{
+	background-color: grey;
+}
+
+.header
+{
+	background-color: darkolivegreen;
+	color:white;
+}

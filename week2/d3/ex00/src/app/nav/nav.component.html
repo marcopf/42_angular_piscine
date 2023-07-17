@@ -1,0 +1,28 @@
+<div id="nav">
+	<div class="logo">
+		<img src="https://m.media-amazon.com/images/G/29/gc/designs/livepreview/amazon_squidink_noto_email_v2016_it-main._CB461857165_.png" alt="">
+	</div>
+	<div class="right">
+		<div class="menu">
+			<div class="drop"><h1>Menu</h1></div>
+			<div class="block">
+				<div class="cart menu_item">
+					<h4>Cart</h4>
+					<div class="cart_count">0</div>
+					<img class="cart_t" src="https://www.freeiconspng.com/thumbs/cart-icon/basket-cart-icon-27.png" alt="">
+				</div>
+				<div class="menu_item" (click)="listIt()">
+					<h3 *ngIf="view">Table view</h3>
+					<h3 *ngIf="!view">Card view</h3>
+				</div>
+				<div class="menu_item">
+					<h3>menu item 3</h3>
+				</div>
+			</div>
+		</div>
+		<div class="switcher" (click)="changeView()"><h1 id="switcher">list</h1></div>
+		<div class="profile_pict">
+			<img src="https://closeguardcouriers.com/wp-content/uploads/2016/01/Generic-Profile-1600x1600-1-350x350.png" alt="">
+		</div>
+	</div>
+</div>
