@@ -1,0 +1,41 @@
+<div class="nav">
+	<div class="logo">
+		<a routerLink="/home">
+			<img src="https://assets.subito.it/static/logos/corporate.svg" alt="">
+		</a>
+	</div>
+	<div class="right_side">
+		<button mat-button [matMenuTriggerFor]="menu">
+			Menu
+		</button>
+		<mat-menu #menu="matMenu">
+			<button routerLink="/product" mat-menu-item>Product</button>
+  			<button routerLink="/insert" mat-menu-item>Insert</button>
+		</mat-menu>
+		<button mat-button [matMenuTriggerFor]="today">
+			Today
+		</button>
+		<mat-menu #today="matMenu">
+			<button mat-menu-item>Per te</button>
+			<button mat-menu-item>mi sento fortunato</button>
+		</mat-menu>
+		<input type="text" class="search" placeholder="  🔍   Search">
+		<div class="icons">
+			<div class="icon">
+				<a href="https://www.tiktok.com/login?redirect_url=https%3A%2F%2Fwww.tiktok.com%2Fit-IT&lang=en&enter_method=mandatory">
+					<img src="https://img.freepik.com/premium-vector/tiktok-app-icon-social-media-logo-vector-illustration_277909-404.jpg" alt="">
+				</a>
+			</div>
+			<div class="icon">
+				<a href="https://it-it.facebook.com/">
+					<img src="https://img.freepik.com/premium-vector/blue-social-media-logo_197792-1759.jpg" alt="">
+				</a>
+			</div>
+			<div class="icon">
+				<a href="https://www.instagram.com/">
+					<img src="https://cdn.pixabay.com/photo/2016/08/09/17/52/instagram-1581266_1280.jpg" alt="">
+				</a>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,23 @@
+<div class="cont">
+	<div class="half">
+		<form action="#">
+			<h1>Create Card</h1>
+			<input type="text" placeholder="Name" name="name" [(ngModel)]="form.title">
+			<input type="text" placeholder="Image" name="img" [(ngModel)]="form.image">
+			<input type="text" placeholder="Price" name="price" [(ngModel)]="form.price">
+			<input type="text" placeholder="Description" name="description" [(ngModel)]="form.description">
+			<input type="text" placeholder="Category" name="category" [(ngModel)]="form.category">
+			<button (click)="submitFunc($event)">Create Card</button>
+		</form>
+	</div>
+	<div class="half" *ngIf="form_active">
+		<div class="card_body">
+			<h3>{{card.title}}</h3>
+			<div class="img_cont"><img src="{{card.image}}" alt=""></div>
+			<p>{{card.description}}</p>
+			<h4>{{card.category}}</h4>
+			<h5>{{card.price}}$</h5>
+			<h3>id:{{card.id}}</h3>
+		</div>
+	</div>
+</div>

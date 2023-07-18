@@ -1,0 +1,33 @@
+img
+{
+	width: 100vw;
+	height: 100vh;
+	object-fit: cover;
+	z-index: -13;
+	position: absolute;
+}
+
+.cont
+{
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.p_div
+{
+	background-color: antiquewhite;
+	width: auto;
+	height: 20vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+}
+
+p
+{
+	font-size: 80px;
+}
