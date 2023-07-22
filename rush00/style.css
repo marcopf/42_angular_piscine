@@ -286,6 +286,7 @@ align-items: center;
 .topBot p
 {
 	width: 70%;
+	word-break: break-all;
 }
 
 @media screen and (max-width: 1000px) {
