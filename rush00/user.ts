@@ -4,12 +4,15 @@ let profPict = document.querySelector(".profPict") as HTMLImageElement;
 let follower = document.querySelector(".follower") as HTMLSpanElement;
 let following = document.querySelector(".following") as HTMLSpanElement;
 let posts = document.querySelector(".posts") as HTMLDivElement;
+let storiesGroup = document.querySelector(".stories") as HTMLDivElement;
 let modalImg = document.querySelector(".modalImg") as HTMLImageElement;
 let modal = document.getElementById("myModal") as HTMLDivElement;
 let desc = document.querySelector(".desc") as HTMLParagraphElement;
+let viewState = true;
 let postNumber = Math.ceil(Math.random() * 100);
 
 async function getUser() {
+	let storiesNum = Math.ceil(Math.random() * 7);
 	const response = await fetch("https://randomuser.me/api/");
 	const user = await response.json();
 	userName!.innerHTML = user.results[0].name.first + "_" + user.results[0].name.last
@@ -27,6 +30,16 @@ async function getUser() {
 	post!.innerHTML = String(postNumber);
 	follower!.innerHTML = String(Math.ceil(Math.random() * 1000));
 	following!.innerHTML = String(Math.ceil(Math.random() * 1000));
+	while(storiesNum--)
+	{
+		let newEl = document.createElement("img");
+		let newDiv = document.createElement("div");
+		const img = await fetch("https://random.imagecdn.app/500/500");
+		newEl.src = img.url;
+		newDiv.appendChild(newEl);
+		newDiv.classList.add("stor")
+		storiesGroup.appendChild(newDiv);
+	}
 	while (postNumber--)
 	{
 		let newEl = document.createElement("img");
@@ -68,4 +81,20 @@ function redir()
 {
 	let base = window.location.href.split("/");
 	window.location.replace(base[0] + "form.html");
+}
+
+function switchCol()
+{
+	if (viewState){
+		document.body.style.backgroundColor = "white";
+		document.body.style.color = "black";
+		viewState = false;	
+	}
+	else{
+		document.body.style.backgroundColor = "black";
+		document.body.style.color = "white";
+		viewState = true;
+	}
+	console.log("hey")
+
 }
