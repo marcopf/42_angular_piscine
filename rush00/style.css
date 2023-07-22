@@ -14,6 +14,25 @@ body
 	font-family: Arial, Helvetica, sans-serif;
 }
 
+.sideBar div
+{
+	width: 70%;
+	display: flex;
+	justify-content: start;
+	align-items: center;
+}
+
+.title_icon
+{
+	display: none;
+}
+
+.sideBar span
+{
+	margin-right: 1vw;
+	font-size: 25px;
+}
+
 .modal {
 	display: none; /* Hidden by default */
 	position: fixed; /* Stay in place */
@@ -178,7 +197,7 @@ body
 .topLeft
 {
 	width: 12vw;
-	height: 22vh;
+	height: 12vw;
 	background-color: blue;
 	border-radius: 50%;
 	overflow: hidden;
@@ -188,7 +207,7 @@ body
 .stor
 {
 	width: 6vw;
-	height: 10vh;
+	height: 6vw;
 	border-radius: 50%;
 	overflow: hidden;
 	outline: 3px solid gray;
@@ -253,4 +272,62 @@ align-items: center;
 .topBot p
 {
 	width: 70%;
+}
+
+@media screen and (max-width: 1000px) {
+	.sideBar h2, h1{
+		display: none;
+	}
+	.title_icon
+	{
+		display: block;
+	}
+	.sideBar div
+	{
+		justify-content: center;
+	}
+	.sideBar
+	{
+		width: 7vw;
+	}
+	.body
+	{
+		width: 100vw;
+	}
+	.postDiv
+	{
+		width: 30vw;
+		height: 30vw;
+	}
+
+	.sideBar
+	{
+		width: 100vw;
+		height: 10vh;
+		top: 90vh;
+		position: fixed;
+		flex-direction: row;
+		z-index: 10000;
+		background-color: black;
+		border-top: 1px solid white;
+	}
+	.top
+	{
+		height: 80vh;
+		width: 100vw;
+	}
+	.bot
+	{
+		height: 30vh;
+	}
+	.topRight
+	{
+	width: 80vw;
+	height: 60vh;
+	display: flex;
+	}
+	.topInfo1
+	{
+		flex-direction: column;
+	}
 }

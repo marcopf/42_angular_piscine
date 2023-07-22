@@ -1,19 +1,32 @@
 let userName = document.querySelector(".name") as HTMLHeadingElement;
 let post = document.querySelector(".post") as HTMLSpanElement;
+let profPict = document.querySelector(".profPict") as HTMLImageElement;
 let follower = document.querySelector(".follower") as HTMLSpanElement;
 let following = document.querySelector(".following") as HTMLSpanElement;
 let posts = document.querySelector(".posts") as HTMLDivElement;
 let modalImg = document.querySelector(".modalImg") as HTMLImageElement;
 let modal = document.getElementById("myModal") as HTMLDivElement;
-let postNumber = Math.ceil(Math.random() * 1000);
+let desc = document.querySelector(".desc") as HTMLParagraphElement;
+let postNumber = Math.ceil(Math.random() * 100);
 
 async function getUser() {
 	const response = await fetch("https://randomuser.me/api/");
 	const user = await response.json();
-	userName.innerHTML = user.results[0].name.first + "_" + user.results[0].name.last
-	post.innerHTML = String(postNumber);
-	follower.innerHTML = String(Math.ceil(Math.random() * 1000));
-	following.innerHTML = String(Math.ceil(Math.random() * 1000));
+	userName!.innerHTML = user.results[0].name.first + "_" + user.results[0].name.last
+	let paramString = window.location.href.split('?')[1];
+	let queryString = new URLSearchParams(paramString);
+
+	for (let pair of queryString.entries()) {
+		if (pair[0] == "username")
+			userName!.innerHTML = pair[1]
+		else if (pair[0] == "description")
+			desc!.innerHTML = pair[1];
+		else if (pair[0] == "imageUrl")
+			profPict.src = pair[1];
+	}
+	post!.innerHTML = String(postNumber);
+	follower!.innerHTML = String(Math.ceil(Math.random() * 1000));
+	following!.innerHTML = String(Math.ceil(Math.random() * 1000));
 	while (postNumber--)
 	{
 		let newEl = document.createElement("img");
@@ -46,7 +59,7 @@ async function getUser() {
 
 window.onclick = function(event) {
 	if (event.target == modal) {
-	  modal.style.display = "none";
+	  modal!.style.display = "none";
 	}
 }
 getUser()
