@@ -26,7 +26,7 @@ body
 
 #myform
 {
-	width: 30%;
+	width: 35%;
 	height: 80vh;
 	display: flex;
 	flex-direction: column;
@@ -119,4 +119,11 @@ p
 	width: 100%;
 	height: 100%;
 	object-fit: contain;
+}
+
+@media screen and (max-width: 800px) {
+	#myform
+	{
+		width: 80%;
+	}
 }

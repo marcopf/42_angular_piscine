@@ -63,3 +63,9 @@ window.onclick = function(event) {
 	}
 }
 getUser()
+
+function redir()
+{
+	let base = window.location.href.split("/");
+	window.location.replace(base[0] + "form.html");
+}

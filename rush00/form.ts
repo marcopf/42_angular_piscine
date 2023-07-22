@@ -284,16 +284,20 @@ pass.addEventListener("keyup", ()=>{
 
 window.addEventListener("submit", (event)=>{
     event.preventDefault();
-    // for (let [key, value] of Object.entries(arr))
-    // {
-    //     if (!value){
-    //         alert(key + ": error\ncontrolla i valori inseriti!!!");
-    //         return ;
-    //     }
-    // }
     let base = window.location.href.split("/");
     let letter = document.querySelector("#letter_number") as HTMLInputElement;
     let desc = document.querySelector("#Description") as HTMLInputElement;
-    let imgUrl = document.querySelector("#imgUrl") as HTMLInputElement; 
+    let imgUrl = document.querySelector("#imgUrl") as HTMLInputElement;
+    let name = document.querySelector("#name") as HTMLInputElement;
+    for (let [key, value] of Object.entries(arr))
+    {
+        if (!value || name.value == "" || imgUrl.value == "" || desc.value == ""){
+            if (value)
+                alert("error valori mancanti\ncontrolla i valori inseriti!!!")
+            else
+                alert(key + ": error\ncontrolla i valori inseriti!!!");
+            return ;
+        }
+    }
     window.location.replace(base[0] + "profile.html?username=" + letter.value + "&description=" + desc.value + "&imageUrl=" + imgUrl.value)
 })
